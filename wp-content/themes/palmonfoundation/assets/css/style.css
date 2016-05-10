@@ -283,14 +283,14 @@ header {
             padding: 60px 50px;
         }
 
-            .women-empowerment h2 {
+            .women-empowerment-content h2 {
                 font-family: 'GraphieBook';
                 font-size: 32px;
                 color: #fff;
                 margin-bottom: 40px;
             }
 
-            .women-empowerment p {
+            .women-empowerment-content p {
                 font-family: 'GraphieRegular';
                 font-size: 20px;
                 color: #fff;
@@ -298,7 +298,7 @@ header {
                 margin: 0 auto 10px;
             }
 
-            .women-empowerment a {
+            .women-empowerment-content a {
                 font-family: 'GraphieRegular';
                 font-size: 13px;
                 color: #fff;
@@ -311,7 +311,7 @@ header {
                         transition: all 0.3s linear;
             }
 
-                .women-empowerment a:hover {
+                .women-empowerment-content a:hover {
                     text-decoration: none;
                     background: rgba(255,255,255,0.2);
                 }
@@ -1904,16 +1904,16 @@ footer {
         padding: 15px;
     }
 
-        .women-empowerment h2 {
+        .women-empowerment-content h2 {
             margin: 0 0 15px;
             font-size: 28px;
         }
 
-        .women-empowerment p {
+        .women-empowerment-content p {
             font-size: 17px;
         }
 
-        .women-empowerment a {
+        .women-empowerment-content a {
             margin-top: 5px;
         }
 
