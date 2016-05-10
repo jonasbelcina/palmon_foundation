@@ -197,12 +197,16 @@ get_header(); ?>
 
 <section class="our-partners">
 	<div class="container">
-		<h2 class="section-header">Our Partners</h2>
+		<h2 class="section-header"><?php the_field('op_heading'); ?></h2>
 		<div class="row">
-			<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/jeev-sewa.png" alt="" />
-			<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/zb.png" alt="" />
-			<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/roundtable.png" alt="" />
-			<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/harmonyhouse.png" alt="" />
+			<?php $images = get_field('gallery');
+			if( $images ): ?>
+			    <div class="partners-slider">
+			        <?php foreach( $images as $image ): ?>
+			            <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" />
+			        <?php endforeach; ?>
+			    </div>
+			<?php endif; ?>
 		</div>
 	</div>
 </section>
