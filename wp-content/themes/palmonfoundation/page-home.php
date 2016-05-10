@@ -199,7 +199,7 @@ get_header(); ?>
 	<div class="container">
 		<h2 class="section-header"><?php the_field('op_heading'); ?></h2>
 		<div class="row">
-			<?php $images = get_field('gallery');
+			<?php $images = get_field('op_gallery');
 			if( $images ): ?>
 			    <div class="partners-slider">
 			        <?php foreach( $images as $image ): ?>

@@ -457,6 +457,11 @@ header {
         padding: 0 15px;
     }
 
+        .cause-tile img {
+            width: 100%;
+            height: auto;
+        }
+
         .cause-content {
             max-height: 68px;
             overflow: hidden;
@@ -619,9 +624,19 @@ header {
     text-align: center;
 }
 
-    .our-partners img {
+    /*.our-partners img {
         display: inline-block;
         margin: 0 45px;
+    }*/
+
+    .partners-slider .owl-item {
+        overflow: hidden;
+    }
+
+    .partners-slider .owl-item img {
+        max-width: 100%;
+        width: auto;
+        margin: 0 auto;
     }
 
 /* 
