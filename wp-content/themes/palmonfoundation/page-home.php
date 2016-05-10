@@ -213,10 +213,10 @@ get_header(); ?>
 
 <section class="our-programs">
 	<div class="container">
-		<h2 class="section-header">Our Programs</h2>
+		<h2 class="section-header"><?php the_field('programs_heading'); ?></h2>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-6 flagship">
-				<h3>Flagship Projects</h3>
+				<h3><?php the_field('projects_heading'); ?></h3>
 				<div class="program-controls">
 					<a href="#" class="all-programs">View All</a>
 					<a href="#" class="program-left"></a>
