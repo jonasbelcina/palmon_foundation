@@ -136,20 +136,22 @@ get_header(); ?>
 <section class="our-causes">
 	<div class="container">
 		<div class="row">
-			<h2 class="section-header">Our Causes</h2>
+			<h2 class="section-header"></h2>
 			<div class="col-lg-6 col-md-6 col-sm-6 cause-tile">
-				<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/girl-education.jpg" alt="" />
+				<?php $causes_left_tile_image = get_field('causes_left_tile_image'); ?>
+				<img src="<?php echo $causes_left_tile_image['url'] ?>" alt="<?php echo $causes_left_tile_image['alt'] ?>" />
 				<div class="cause-content">
-					<h2>Girl Education</h2>
-					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauri  accumsan ipsum velit.</p>
+					<h2><?php the_field('causes_left_tile_heading'); ?></h2>
+					<p><?php the_field('causes_left_tile_content'); ?></p>
 				</div>
 			</div>
 
 			<div class="col-lg-6 col-md-6 col-sm-6 cause-tile">
-				<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/women-empowerment-cause.jpg" alt="" />
+				<?php $causes_right_tile_image = get_field('causes_right_tile_image'); ?>
+				<img src="<?php echo $causes_right_tile_image['url'] ?>" alt="<?php echo $causes_right_tile_image['alt'] ?>" />
 				<div class="cause-content">
-					<h2>Women Empowerment</h2>
-					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauri  accumsan ipsum velit.</p>
+					<h2><?php the_field('causes_right_tile_heading'); ?></h2>
+					<p><?php the_field('causes_right_tile_content'); ?></p>
 				</div>
 			</div>
 		</div>
