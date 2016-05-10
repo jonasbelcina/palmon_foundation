@@ -59,7 +59,7 @@ get_header(); ?>
 
 <section class="ripple-effect">
 	<div class="container">
-		<h2 class="section-header">The Ripple Effect</h2>
+		<h2 class="section-header"><?php the_field('re_heading'); ?></h2>
 		<div class="row">
 			<?php if( have_rows('effects') ): ?>
 				<div class="desktop-effects">
