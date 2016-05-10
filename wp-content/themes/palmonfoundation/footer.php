@@ -81,7 +81,7 @@
 
 					<div class="col-lg-3 col-md-3 col-sm-4">
 						<div class="row">
-							<h3>Newsletter</h3>
+							<h3 id="footer-newsletter">Newsletter</h3>
 							<p>Subscribe to the newsletter</p>
 							<form>
 								<input type="email" placeholder="Enter your e-mail here" />

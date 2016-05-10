@@ -1491,15 +1491,15 @@ footer {
     }
 
     .side-social a:first-child {
-        background: url("../assets/images/social-facebook.jpg") left top no-repeat;
+        background: url("../images/social-facebook.jpg") left top no-repeat;
     }
 
     .side-social a:nth-child(2) {
-        background: url("../assets/images/social-twitter.jpg") left top no-repeat;
+        background: url("../images/social-twitter.jpg") left top no-repeat;
     }
 
     .side-social a:last-child {
-        background: url("../assets/images/social-youtube.jpg") left top no-repeat;
+        background: url("../images/social-youtube.jpg") left top no-repeat;
     }
 
     .stay-connected {
@@ -1684,15 +1684,15 @@ footer {
         }
 
         .blog-share-icons a:first-child {
-            background: url("../assets/images/fb3.png") left top no-repeat;
+            background: url("../images/fb3.png") left top no-repeat;
         }
 
         .blog-share-icons a:nth-child(2) {
-            background: url("../assets/images/twitter3.png") left top no-repeat;
+            background: url("../images/twitter3.png") left top no-repeat;
         }
 
         .blog-share-icons a:last-child {
-            background: url("../assets/images/gplus3.png") left top no-repeat;
+            background: url("../images/gplus3.png") left top no-repeat;
         }
 
         .blog-comments {
@@ -1771,7 +1771,7 @@ footer {
         .mobile-post-filter.posts-filter a:hover,
         .mobile-post-filter.posts-filter a.post-filter-active {
             background: #231f20;
-            color: #e55555;
+            color: #b5985a;
             text-decoration: none;
         }
 
@@ -2051,6 +2051,35 @@ footer {
         padding: 20px 0;
     }
 
+    .main {
+        padding: 30px 0 5px;
+    }
+
+    .main-blog {
+        margin-top: 0;
+    }
+
+        .side-box {
+            margin: 0 auto 35px;
+        }
+
+        .posts-filter.mobile-post-filter {
+            display: block;
+            margin-top: 35px;
+        }
+
+        .posts-filter.mobile-post-filter .button-group {
+            display: none;
+        }
+
+    .sidebar-blog {
+        margin-top: 35px;
+    }
+
+        .posts-filter {
+            display: none;
+        }
+
 }
 
 @media (max-width: 768px) {
@@ -2065,7 +2094,7 @@ footer {
 }
 
 @media (max-width: 767px) {
-    .women-empowerment {
+    .women-empowerment:not(.news-item) {
         padding: 15px;
     }
 
@@ -2206,6 +2235,26 @@ footer {
             display: none;
         }
 
+    .news-banner {
+        height: 200px;
+    }
+
+    .main-blog {
+        border: 0;
+    }
+
+        .news-item {
+            width: 48%;
+        }
+
+        .news-item-title {
+            padding: 10px;
+        }
+
+    .news-content {
+        padding: 20px 0 10px;
+    }
+
 }
 
 @media (max-width: 568px) {
@@ -2242,6 +2291,32 @@ footer {
             margin: 0 auto;
         }
 
+    .news-banner {
+        height: 150px;
+    }
+
+        .news-banner .banner-text h2 {
+            font-size: 40px;
+        }
+
+    .blog-posts {
+        width: 290px;
+        margin: 0 auto;
+    }
+
+        .news-item {
+            min-width: 290px;
+            height: auto;
+        }
+
+        .news-item-title {
+            line-height: 18px;
+            font-size: 16px;
+            text-align: left;
+            min-height: 56px;
+            height: auto;
+        }
+
 }
 
 @media (max-width: 480px) {
@@ -2267,6 +2342,27 @@ footer {
         width: 100%;
     }
 
+}
+
+@media (max-width: 420px) {
+    .single-blog-posts .news-item-title {
+        font-size: 20px;
+        padding: 0;
+        min-height: auto;
+        margin-bottom: 15px;
+    }
+
+        .single-blog-posts .news-item-title span {
+            float: none;
+            display: block;
+            margin-top: 5px;
+            font-size: 15px;
+            line-height: 1;
+        }
+
+    .news-author {
+        padding: 0;
+    }
 }
 
 @media (max-width: 380px) {

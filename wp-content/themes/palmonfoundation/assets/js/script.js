@@ -202,9 +202,25 @@
           
         });
 
+        // toggle mobile posts filter
         $('.posts-filter.mobile-post-filter h2').on('click', function() {
             $('.posts-filter.mobile-post-filter .button-group').slideToggle(function() {
                 $('.posts-filter.mobile-post-filter h2 span').toggle();
+            });
+        });
+
+        $(function() {
+            $('a.smooth[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                    }
+                }
             });
         });
 

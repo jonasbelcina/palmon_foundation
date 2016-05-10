@@ -5,7 +5,7 @@
 			<?php if (!is_single()) : ?>
 				<button data-filter="*" class="post-filter-active">All</button>
 			<?php else: ?>
-				<a href="<?=home_url()?>/news">All</a>
+				<a href="<?=home_url()?>/blog">All</a>
 			<?php endif; ?>
 			<?php
 				$args = array(
@@ -18,7 +18,7 @@
 						<?php if (!is_single()) : ?>
 							<button data-filter=".<?php echo $category->slug; ?>"><?php echo $category->name; ?></button>
 						<?php else: ?>
-							<a href="<?=home_url()?>/news#<?php echo $category->slug; ?>"><?php echo $category->name; ?></a>
+							<a href="<?=home_url()?>/blog#<?php echo $category->slug; ?>"><?php echo $category->name; ?></a>
 						<?php endif; ?>
 					<?php 
 					endif;
@@ -39,7 +39,7 @@
 			<!-- <form>
 				<input type="submit" value="Subscribe" />
 			</form> -->
-			<a href="#footer-newsletter">Subscribe</a>
+			<a class="smooth" href="#footer-newsletter">Subscribe</a>
 		</div>
 	</div>
 </div>

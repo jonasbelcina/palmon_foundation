@@ -50,7 +50,7 @@
 		<h2>Love this post</h2>
 		<div class="blog-share-icons">
 			<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" onclick='javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600");return false;'></a>
-			<a target="_blank" href="https://twitter.com/home?status=<?php echo shortenText(get_the_title(), 100); ?> <?php the_permalink(); ?>" onclick='javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600");return false;'></a>
+			<a target="_blank" href="https://twitter.com/home?status=<?php echo shortenText(get_the_title(), 100, ''); ?> <?php the_permalink(); ?>" onclick='javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600");return false;'></a>
 			<a target="_blank" href="https://plus.google.com/share?url=<?php the_permalink();?>"  onclick='javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600");return false;'></a>
 		</div>
 	</div>
