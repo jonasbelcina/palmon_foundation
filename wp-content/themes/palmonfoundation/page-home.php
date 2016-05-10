@@ -12,27 +12,25 @@ get_header(); ?>
 
 <section class="banner">
 	<div class="home-banner">
-		<div class="home-slide">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.jpg" />
-			<div class="container">
-				<div class="slide-content">
-					<h1>Women can't be silenced. Take action with Palmon Foundation!</h1>
-					<h3>Lend your support, They need help</h3>
-					<a href="#">Join Us Now</a>
-				</div>
-			</div>
-		</div>
+		<?php if( have_rows('slides') ):
+			while( have_rows('slides') ): the_row(); 
+				$image = get_sub_field('image'); 
+				$mob_img = get_sub_field('mobile_image'); ?>
 
-		<div class="home-slide">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide2.jpg" alt="" />
-			<div class="container">
-				<div class="slide-content middle-content">
-					<h1>Palmon Foundation</h1>
-					<h3>Light, Hope, Opportunity</h3>
-					<a href="#">Learn More</a>
+				<div class="home-slide">
+					<img class="desktop-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+					<img class="mobile-img" src="<?php echo $mob_img['url']; ?>" alt="<?php echo $mob_img['alt']; ?>">
+					<div class="container">
+						<div class="slide-content">
+							<h1><?php echo the_sub_field('text_line_1'); ?></h1>
+							<h3><?php echo the_sub_field('text_line_2'); ?></h3>
+							<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('link_text'); ?></a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
+
+			<?php endwhile;
+		endif; ?>
 	</div>
 </section>
 
