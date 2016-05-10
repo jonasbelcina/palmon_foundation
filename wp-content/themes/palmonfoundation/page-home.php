@@ -389,7 +389,7 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-6 home-blogs home-voices">
 				<div class="row">
-					<h2>Voices of Change</h2>
+					<h2><?php the_field('voices_heading'); ?></h2>
 					<a class="all-posts" href="#">View All</a>
 
 					<?php
@@ -425,7 +425,7 @@ get_header(); ?>
 
 			<div class="col-lg-6 col-md-6 col-sm-6 home-blogs">
 				<div class="row">
-					<div class="col-md-12"><h2>From our Blogs</h2></div>
+					<div class="col-md-12"><h2><?php the_field('blogs_heading'); ?></h2></div>
 					<a class="all-posts" href="#">View All</a>
 
 					<?php
