@@ -28,7 +28,7 @@
 	</div>
 
 	<div class="side-box">
-		<h2>Get Social with us<span>@Palmonade</span></h2>
+		<h2>Get Social with us<span>@PalmonFoundation</span></h2>
 		<ul class="side-social">
 			<a href="<?php the_field('facebook', 'options'); ?>" target="_blank"></a>
 			<a href="<?php the_field('twitter', 'options'); ?>" target="_blank"></a>
