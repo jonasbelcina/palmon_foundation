@@ -532,7 +532,7 @@ add_action( 'init', 'pf_events_init' );
 function pf_voices_init() {
     $args = array(
       	'labels' => array(
-      					'name' => _x( 'Voices of Change', 'events' ),
+      					'name' => _x( 'Voices of Change', 'voices' ),
       					// 'singular_name' => _x( 'Event', 'event' ),
       					// 'all_items' => __( 'All Events' ),
       					// 'edit_item' => __( 'Edit Event' ),

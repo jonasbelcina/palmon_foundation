@@ -407,6 +407,7 @@ get_header(); ?>
 
 					<?php
 						$args = array(
+							'post_type'			  => 'voices',
 							'posts_per_page'      => 1,
 							'ignore_sticky_posts' => 1,
 						);
