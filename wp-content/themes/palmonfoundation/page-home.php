@@ -301,24 +301,6 @@ get_header(); ?>
 
 					wp_reset_postdata();
 				?>
-
-				<!-- <div class="programs-slider">
-					<div class="col-md-6 col-sm-6 program-slide">
-						<a href="#">
-							<div class="program-img">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/program1.jpg" />
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-6 col-sm-6 program-slide">
-						<a href="#">
-							<div class="program-img">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/program2.jpg" />
-							</div>
-						</a>
-					</div>
-				</div> -->
 			</div>
 
 			<div class="col-lg-6 col-md-6 col-sm-6 ">
@@ -361,8 +343,8 @@ get_header(); ?>
 </section>
 
 <section class="recent-events">
-	<h2 class="section-header">Recent Events</h2>
-	<h4>Explore, Engage, Empower</h4>
+	<h2 class="section-header"><?php the_field('events_heading'); ?></h2>
+	<h4><?php the_field('events_subtext'); ?></h4>
 	<div class="event-tiles">
 
 		<?php
