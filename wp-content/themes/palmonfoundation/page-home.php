@@ -426,7 +426,7 @@ get_header(); ?>
 			<div class="col-lg-6 col-md-6 col-sm-6 home-blogs">
 				<div class="row">
 					<div class="col-md-12"><h2><?php the_field('blogs_heading'); ?></h2></div>
-					<a class="all-posts" href="#">View All</a>
+					<a class="all-posts" href="<?php echo home_url(); ?>/blog">View All</a>
 
 					<?php
 						$args = array(

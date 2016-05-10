@@ -21,10 +21,10 @@
 					</ul>
 
 					<ul class="footer-social">
-						<li><a href="#" target="_blank"></a></li>
-						<li><a href="#" target="_blank"></a></li>
-						<li><a href="#" target="_blank"></a></li>
-						<li><a href="#" target="_blank"></a></li>
+						<li><a href="<?php the_field('facebook' , 'options'); ?>" target="_blank"></a></li>
+						<li><a href="<?php the_field('twitter' , 'options'); ?>" target="_blank"></a></li>
+						<li><a href="<?php the_field('instagram' , 'options'); ?>" target="_blank"></a></li>
+						<li><a href="<?php the_field('google_plus' , 'options'); ?>" target="_blank"></a></li>
 					</ul>
 				</div>
 
@@ -35,9 +35,9 @@
 								<div class="row">
 									<h3>Contact Us <span class="glyphicon glyphicon-plus"></span></h3>
 									<ul>
-										<li><a href="mailto:hello@palmon.com">hello@palmon.com</a></li>
-										<li>Studio M, 4th Floor8 Lower Dubai</li>
-										<li>+38 888 6 0875 9922</li>
+										<li><a href="mailto:<?php the_field('email' , 'options'); ?>"><?php the_field('email' , 'options'); ?></a></li>
+										<li><?php the_field('address' , 'options'); ?></li>
+										<li><?php the_field('phone_number' , 'options'); ?></li>
 									</ul>
 								</div>
 							</div>
