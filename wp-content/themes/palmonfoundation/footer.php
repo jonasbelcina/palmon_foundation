@@ -16,7 +16,7 @@
 				<div class="footer-top">
 					<ul class="footer-nav">
 						<li><a href="<?php echo home_url(); ?>/">Events</a></li>
-						<li><a href="<?php echo home_url(); ?>/">News</a></li>
+						<li><a href="<?php echo home_url(); ?>/blog">News</a></li>
 						<li><a href="<?php echo home_url(); ?>/">Contact</a></li>
 					</ul>
 
