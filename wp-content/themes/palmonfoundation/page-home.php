@@ -166,7 +166,7 @@ get_header(); ?>
 	</div>
 
 	<div class="col-lg-6 col-md-6 col-sm-6">
-		<h2 class="section-header">Get Involved</h2>
+		<h2 class="section-header"><?php the_field('gi_heading'); ?></h2>
 		<p>Join the Palmon Foundation TODAY to be a</p>
 		<div class="foundation-members">
 			<div class="member-type">Mentor</div>
@@ -181,7 +181,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6">
-					<h2>You can <span>Light the Way</span></h2>
+					<h2><?php the_field('gi_donate_heading'); ?></h2>
 				</div>
 
 				<div class="col-lg-6 col-md-6 col-sm-6">
