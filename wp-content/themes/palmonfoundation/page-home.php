@@ -39,16 +39,17 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-6">
 				<div class="row">
-					<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/women-empowerment.jpg" alt="" />
+					<?php $we_image = get_field('we_image'); ?>
+					<img class="img-responsive" src="<?php echo $we_image['url']; ?>" alt="<?php echo $we_image['alt']; ?>" />
 				</div>
 			</div>
 
 			<div class="col-lg-6 col-md-6 col-sm-6">
 				<div class="row">
 					<div class="women-empowerment-content">
-						<h2>Women Empowering Women</h2>
-						<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauri  accumsan ipsum velit.</p>
-						<a href="#">Learn More</a>
+						<h2><?php the_field('we_heading'); ?></h2>
+						<p><?php the_field('we_content'); ?></p>
+						<a href="<?php the_field('we_link'); ?>"><?php the_field('we_link_text'); ?></a>
 					</div>
 				</div>
 			</div>
