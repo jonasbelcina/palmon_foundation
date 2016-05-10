@@ -57,5 +57,5 @@
 </div>
 
 <div class="blog-comments">
-	<?php disqus_embed('palmonade'); ?>
+	<?php disqus_embed(' palmonfoundation '); ?>
 </div>
