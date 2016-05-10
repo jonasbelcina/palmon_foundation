@@ -552,6 +552,19 @@ function pf_voices_init() {
 }
 add_action( 'init', 'pf_voices_init' );
 
+// get top level category of post
+function get_top_parent_cat($cat_ID)
+{
+	$cat = get_category( $cat_ID );
+	$new_cat_id = $cat->category_parent;
+
+	if($new_cat_id != "0") {
+		return (get_top_parent_cat($new_cat_id));
+	}
+
+	return $cat_ID;
+}
+
 
 
 
