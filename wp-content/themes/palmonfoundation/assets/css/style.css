@@ -2433,17 +2433,302 @@ footer {
 
 
 
+/* ABout Us */
+
+.banner.about{
+    margin-top: 0;
+    background-color: #000;
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.about-banner{
+    background:rgba(25,25,25,0.95);
+    padding-top: 80px;
+}
+.about-banner h1{
+    font-size: 34px;
+    margin: 30px 0;
+    color: #fff;
+}
+.about-banner .mission{
+    padding-top:30px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    border-right: 1px solid #4d4d4d;
+    font-size: 20px;
+}
+.about-banner .who{
+    padding-top:30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    color: #a0a0a0;
+    font-size: 17px;
+}
+
+/* Founders*/
+.founders {
+    padding: 50px 0;
+}
+
+    .founder-tile {
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+        .founder-tile  img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .founder-content {
+            max-height: 0px;
+            overflow: hidden;
+            position: absolute;
+            left: 15px;
+            right: 30px;
+            bottom: 30px;
+            background: rgba(0,0,0,0.6);
+            padding: 0px;
+            border-radius: 6px;
+        }
+        .founder-content .inner{
+            padding: 20px 15px;
+        }
+
+
+                .founder-tile:nth-of-type(2) .founder-content {
+                    left: 30px;
+                    right: 15px;
+                }
+
+            .founder-tile  h2 {
+                font-family: 'GraphieRegular';
+                font-size: 26px;
+                color: #fff;
+                margin: 10px 0;
+            }
+            .founder-tile p{
+                color: #fff;
+                margin: 0;
+            }
+            .founder-tile  .details{
+                border-top:1px solid #4e4e4e;
+                padding-top:15px;
+                margin-top: 15px;
+            }
+
+            .founder-tile  .details p {
+                font-family: 'GraphieLight';
+                font-style: italic;
+                font-size: 18px;
+                color: #aaa;
+                margin: 15px 0 0;
+                line-height: 1.2;
+                margin: 0;
+            }
+
+        .founder-tile:hover .founder-content {
+            max-height: 100%;
+            -webkit-transition: all 0.8s linear;
+                    transition: all 0.8s linear;
+        }
 
 
 
 
 
+/* The Need */
+
+.the-need{
+    text-align: center;
+    background:#f5f5f5;
+    border-top:1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 50px 0;
+    color: #3e3e3e;
+    font-size: 20px;
+}
+.the-need .details{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.the-need h2{
+    text-transform: uppercase;
+    color: #3e3e3e;
+    font-size: 26px;
+    line-height: 35px;
+}
+.the-need h3{
+    font-family: 'GraphieBold';
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #444444;
+}
+.the-need .needs{
+    width: 80%;
+    margin: 0 auto;
+    background: url(../images/need-bg.png) no-repeat center center;
+    background-size: auto 80%;
+}
+.the-need .need{
+    font-family: 'GraphieRegular';
+    text-align:center;
+    background:#fff;
+    margin: 15px 0;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    margin: 20px 0;
+}
+.the-need .need:after{
+    position: absolute;
+    content: ' ';
+    width: 50px;
+    border-bottom: 1px solid #000;
+    right: -70px;
+    top: 50%;
+}
+.the-need .needs  > div:nth-child(2n+2) .need{
+    float: right;
+}
+.the-need .needs  > div:nth-child(2n+2) .need:after{
+    left: -70px;
+    right: auto;
+}
+.the-need .needs > div:nth-child(1) .need:after{
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+}
+.the-need .needs > div:nth-child(2) .need:after{
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg);
+}
+.the-need .needs > div:nth-child(5) .need:after{
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg);
+}
+.the-need .needs > div:nth-child(6) .need:after{
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+}
 
 
+/* Advisory Board */
+.advisory-board{
+    padding: 50px 0;
+}
+.advisory-board-slider{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.advisory-board .person-tile{
+    background: #000;
+    color: #fff;
+}
+.advisory-board .person-tile img{
+    max-width: 100%;
+}
+.advisory-board .person-tile .content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.advisory-board .person-tile p{
+    font-size: 18px;
+    color: #a0a0a0;
+}
+.advisory-board .person-tile p.title{
+    color: #fff;
+    font-size: 19px;
+}
 
 
+/* IMPACT */
 
+.impact{
+    padding: 30px 0;
+    background: #f5f5f5;
+    text-align: center;
+    padding-bottom: 120px;
+}
 
+.impact .image{
+    height: 150px;
+    line-height: 150px;
+}
+.impact .single{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.impact h2{
+    font-family: 'GraphieSemiBold';
+    color: #333333;
+    font-size: 26px;
+}
+.impact p{
+    color: #333333;
+    font-size: 19px;
+}
+.impact .join{
+    display: inline-block;
+    background: #fff;
+    border:1px solid #000;
+    font-size: 20px;
+    padding: 15px 30px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 30px 0;
+    letter-spacing: 2px;
+}
+.impact .join:hover{
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    animation: bg-animation 1s;
+}
+@keyframes bg-animation{
+    from{
+        background: #fff;
+    }
+    to{
+        background: #000;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner.about{
+        background-size: auto 100%;
+    }
+    .about-banner .mission , .about-banner .who{
+        padding: 30px 15px;
+    }
+    .the-need .needs{
+        padding-top: 200px;
+        background-size: auto 200px;
+        background-position: top;
+    }
+    .the-need .need{
+        float: none !important;
+    }
+    .the-need .need:after{
+        display: none;
+    }
+    .advisory-board .person-tile .image{
+        padding: 0;
+    }
+}
 
 
 

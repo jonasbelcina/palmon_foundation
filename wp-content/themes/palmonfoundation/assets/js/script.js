@@ -110,6 +110,15 @@
             }
         });
 
+        // home page partners slider
+        $('.advisory-board-slider').owlCarousel({
+            items: 1,
+            nav: true,
+            loop: true,
+            navText: false,
+            autoplay: true,
+        });
+
         // home page programs preview on hover
         $('.program-slide').mouseenter(function() {
             var this_data = $(this).find('.preview-images').data('program');
