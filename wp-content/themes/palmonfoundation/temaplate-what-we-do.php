@@ -1,6 +1,6 @@
 <?php
 /**
-Template Name: About Us
+Template Name: What we do
  */
 
 get_header(); 
