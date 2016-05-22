@@ -2731,8 +2731,226 @@ footer {
 }
 
 
+/* What we do */
+.banner.what-we-do{
+    margin: 0;
+    padding: 40px 0;
+}
+.what-we-do h3{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.what-we-do p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #4d4d4d;
+}
+.what-we-do .content{
+    margin: 10px 30px;
+}
+.what-we-do .content img{
+    max-width: 100%;
+}
 
 
+/* Working model */
+.working-model{
+    padding: 40px 0;
+    background:#f5f5f5;
+    border-top:1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    text-align: center;
+}
+.working-model .content{
+    font-family: 'GraphieSemiBold';
+    font-size: 20px;
+}
+.working-model .content div{
+    width: 16.66%;
+    float: left;
+    height: 200px;
+}
+.working-model .content > div:nth-child(1){
+    background: url(../images/model-bg-1.png) no-repeat right center;
+}
+.working-model .content > div:nth-child(2){
+    background: url(../images/model-bg-2.png) no-repeat center center;
+}
+.working-model .content > div:nth-child(3){
+    background: url(../images/model-bg-3.png) no-repeat center center;
+}
+.working-model .content > div:nth-child(4){
+    background: url(../images/model-bg-4.png) no-repeat center center;
+}
+.working-model .content > div:nth-child(5){
+    background: url(../images/model-bg-4.png) no-repeat center center;
+}
+
+/* key to tranformation */
+.keys{
+    padding-top: 40px;
+}
+.keys h3{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.keys .content a{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333333;
+    text-decoration:none;
+    display: block;
+}
+.keys .li{
+    border:none;
+} 
+.keys .box .key{
+    width: 150px;
+    margin: 0 auto;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #eaeaea;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 80%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.5;
+    margin-bottom: 30px;
+}
+.keys .nav-tabs{
+    border: none;
+    list-style: none;
+}
+.keys .content ul > li:nth-child(1) .key{
+    background-image: url(../images/key-1.png);
+}
+.keys .content ul > li:nth-child(2) .key{
+    background-image: url(../images/key-2.png);
+}
+.keys .content ul > li:nth-child(3) .key{
+    background-image: url(../images/key-3.png);
+}
+.keys .content ul > li:nth-child(4) .key{
+    background-image: url(../images/key-4.png);
+}
+.keys .box.active  , .keys .box:hover{
+    border-color:#fff;
+    background:none;
+}
+.keys .box.active .key , .keys .box:hover .key{
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+    background-color: #f9f9f9;
+    opacity: 1;
+}
+.keys .tab-pane{
+    border:none;
+    background:#737373;
+    color: #fff;
+    padding: 30px 0;
+}
+.keys .tab-pane h1{
+    font-family: 'GraphieSemiBold';
+    font-size: 30px;
+    margin-top: 0;
+}
+.keys .tab-pane p{
+    font-size: 26px;
+}
+.keys .nav-tabs>li.active>a, .keys .nav-tabs>li.active>a:focus, .keys .nav-tabs>li.active>a:hover{
+    border-color: #fff;
+}
+.keys .nav-tabs>li>a, .keys .nav-tabs>li>a:focus, .keys .nav-tabs>li>a:hover{
+    border-color: #fff;
+}
+.keys .tab-content img{
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+   max-height: 100%;
+}
+
+
+/* Our programmes */
+.programmes{
+    padding: 40px 0;
+    background:#f5f5f5;
+}
+.programmes h3{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.programmes .program{
+    margin: 30px 0;
+    padding: 30px 0;
+}
+.programmes .program img{
+    max-width: 100%;
+}
+.programmes .program h1{
+    font-family: 'GraphieSemiBold';
+    font-size: 30px;
+    margin-top: 0;
+    color: #333333;
+}
+.programmes .program p{
+    font-size: 18px;
+    color: #4d4d4d;
+}
+
+
+/*Donate now */
+.donate{
+    background: #333 url('../images/school.jpg') no-repeat center center;
+    background-size: auto 100%;
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+.donate h1{
+    font-family: 'GraphieSemiBold';
+    font-size: 35px;
+}
+.donate a {
+    font-family: 'GraphieBold';
+    font-size: 19px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    background: rgba(174,147,91,1);
+    margin-top: 40px;
+}
+
+
+/* Voice of change */
+.voice{
+    padding: 40px 0;
+    padding-bottom: 70px;
+}
+.voice img{
+    max-width: 100%;
+}
+.voice h1{
+    font-family: 'GraphieSemiBold';
+    font-size: 30px;
+    margin-top: 0;
+}
+.voice p{
+    font-size: 18px;
+    line-height: 27px;
+}
 
 
 
