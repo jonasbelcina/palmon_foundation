@@ -18,3 +18,4 @@ sitemap.xml.gz
 # no need for these #
 .DS_Store
 .htaccess
+.com.apple.timemachine.supported
