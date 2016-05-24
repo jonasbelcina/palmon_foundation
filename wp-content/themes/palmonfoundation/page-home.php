@@ -136,7 +136,7 @@ get_header(); ?>
 <section class="our-causes">
 	<div class="container">
 		<div class="row">
-			<h2 class="section-header"></h2>
+			<h2 class="section-header"><?php the_field('causes_heading'); ?></h2>
 			<div class="col-lg-6 col-md-6 col-sm-6 cause-tile">
 				<?php $causes_left_tile_image = get_field('causes_left_tile_image'); ?>
 				<img src="<?php echo $causes_left_tile_image['url'] ?>" alt="<?php echo $causes_left_tile_image['alt'] ?>" />
