@@ -590,6 +590,8 @@ header {
             text-transform: uppercase;
             display: inline-block;
             padding: 12px 30px;
+            -webkit-transition: all 0.3s linear;
+                    transition: all 0.3s linear;
         }
 
         .involved-donate a:first-child {
@@ -1796,7 +1798,7 @@ footer {
     margin-top: 0;
     background-color: #000;
     background-position: center center;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
 }
@@ -2201,6 +2203,8 @@ footer {
     border: none;
     list-style: none;
     padding: 0;
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 .keys .content ul .key1 .key{
     background-image: url(../images/key-1.png);
@@ -2244,6 +2248,11 @@ footer {
 .keys .tab-pane p{
     font-size: 26px;
 }
+
+.keys .nav-tabs li {
+    position: relative;
+}
+
 .keys .nav-tabs>li.active>a, .keys .nav-tabs>li.active>a:focus, .keys .nav-tabs>li.active>a:hover{
     border-color: #fff;
 }
@@ -2255,6 +2264,14 @@ footer {
     float: right;
     margin-right: 20px;
     max-height: 100%;
+}
+
+.keys .nav-tabs li.active:after {
+    content: url('../images/keys-down.png');
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    bottom: 0;
 }
 
 
@@ -2310,7 +2327,15 @@ footer {
     color: #fff;
     background: rgba(174,147,91,1);
     margin-top: 40px;
+    -webkit-transition: all 0.3s linear;
+            transition: all 0.3s linear;
 }
+
+    .donate a:hover,
+    .donate a:focus {
+        text-decoration: none;
+        background: rgba(174,147,91,0.8);
+    }
 
 
 /* Voice of change */
@@ -2390,6 +2415,7 @@ footer {
 
             .navbar-nav {
                 width: 100%;
+                margin: 0;
             }
 
             .navbar-nav > li {
@@ -2604,6 +2630,42 @@ footer {
             display: none;
         }
 
+    .about-banner {
+        padding-top: 0;
+    }
+
+        .about-banner .mission {
+            border-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .about-banner .who {
+            padding-top: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    .what-we-do .content > .col-md-6:nth-child(2) {
+        text-align: center;
+    }
+
+        .what-we-do .content img {
+            margin-top: 25px;
+        }
+
+    .the-need .needs{
+        padding-top: 200px;
+        background-size: auto 200px;
+        background-position: top;
+    }
+    .the-need .need{
+        float: none !important;
+    }
+    .the-need .need:after{
+        display: none;
+    }
+
     .working-model {
         padding: 40px 0;
     }
@@ -2636,6 +2698,14 @@ footer {
             top: 65%;
         }
 
+    .voice {
+        padding-bottom: 40px;
+    }
+
+        .voice h1 {
+            margin-top: 20px;
+        }
+
 }
 
 @media (max-width: 768px) {
@@ -2650,6 +2720,11 @@ footer {
 }
 
 @media (max-width: 767px) {
+    .section-header {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
     .women-empowerment:not(.news-item) {
         padding: 15px;
     }
@@ -2811,34 +2886,45 @@ footer {
         padding: 20px 0 10px;
     }
 
+    .what-we-do h3 {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .keys h3 {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
     .banner.about{
         background-size: auto 100%;
     }
     .about-banner .mission , .about-banner .who{
         padding: 30px 15px;
     }
-    .the-need .needs{
-        padding-top: 200px;
-        background-size: auto 200px;
-        background-position: top;
-    }
-    .the-need .need{
-        float: none !important;
-    }
-    .the-need .need:after{
-        display: none;
-    }
+    
     .advisory-board .person-tile .image{
         padding: 0;
     }
 
     .keys .tab-content img {
         width: auto;
+        float: none;
+        margin-right: 0;
     }
+
+    .keys .nav-tabs {
+        margin-bottom: 10px;
+    }
+
+        .keys .nav-tabs li.active:after {
+            display: none;
+        }
 
     #sync1 .box {
         float: none;
         margin: 0 auto;
+        width: auto;
     }
 
     #sync1 .owl-nav {
@@ -2864,6 +2950,15 @@ footer {
         display: inline-block;
         float: right;
     }
+
+    .programmes .program {
+        margin: 0 0 50px;
+        padding: 0 15px;
+    }
+
+        .programmes .program img {
+            margin-top: 20px;
+        }
 
 }
 
