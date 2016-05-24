@@ -15,7 +15,7 @@ $mob_img = get_field('banner_mobile');
 		<div class="row">
 			<h2 class="section-header">For Women and Girls</h2>
 			<h3>We create environments where opportunities can grow</h3>
-			<div class="row">
+			<!-- <div class="row"> -->
 				<div class="content">
 					<div class="col-md-6">
 						<p>We are dedicated to educating girls and empowering women to achieve their full potential physically, mentally and economically to become change makers and leaders in their community. We equip them with resources, opportunities and a global platform that facilitates networking, learning and sharing of experiences thus creating a world where every woman is able to use her voice, make her own decisions, and engage in economic opportunities</p>
@@ -25,7 +25,7 @@ $mob_img = get_field('banner_mobile');
 					</div> 
 					<div class="clearfix"></div>
 				</div>
-			</div>
+			<!-- </div> -->
 		</div> 
 	</div>
 </section>
@@ -35,26 +35,24 @@ $mob_img = get_field('banner_mobile');
 	<div class="container">
 		<div class="row">
 			<h2 class="section-header">Our Working Model</h2>
-			<div class="row">
-				<div class="content">
-					<div>
-						Girls out of school
-					</div>
-					<div>
-						Girl’s Education
-					</div>
-					<div>
-						Career Development
-					</div>
-					<div>
-						Women in Leadership
-					</div>
-					<div>
-						Bringing systemic change
-					</div>
-					<div>
-						Generations of girls in school
-					</div>
+			<div class="content">
+				<div>
+					<span>Girls out of school</span>
+				</div>
+				<div>
+					<span>Girl’s Education</span>
+				</div>
+				<div>
+					<span>Career Development</span>
+				</div>
+				<div>
+					<span>Women in Leadership</span>
+				</div>
+				<div>
+					<span>Bringing systemic change</span>
+				</div>
+				<div>
+					Generations of girls in school
 				</div>
 			</div>
 		</div> 
@@ -66,41 +64,41 @@ $mob_img = get_field('banner_mobile');
 		<div class="row">
 			<h2 class="section-header">Keys to Transformation</h2>
 			<h3>It takes these 4 Keys to transform the lives of women &amp; girls</h3>
-			<div class="row content">
-				<ul class="nav-tabs">
-					<li class="col-xs-3 box active">
+			<div class="content">
+				<ul class="nav-tabs" id="sync1">
+					<li class="col-xs-3 key1 box active">
 						<a data-toggle="tab" href="#tab_1">
 							<div class="key">
 							</div>
 							<p>Peace &amp; Security</p>
 						</a>
 					</li>
-					<li class="col-xs-3 box">
+					<li class="col-xs-3 key2 box">
 						<a data-toggle="tab" href="#tab_2">
 							<div class="key">
 							</div>
-							<p>Peace &amp; Security</p>
+							<p>Proper Health Care</p>
 						</a>
 					</li>
-					<li class="col-xs-3 box">
+					<li class="col-xs-3 key3 box">
 						<a data-toggle="tab" href="#tab_3">
 							<div class="key">
 							</div>
-							<p>Peace &amp; Security</p>
+							<p>Quality Education</p>
 						</a>
 					</li>
-					<li class="col-xs-3 box">
+					<li class="col-xs-3 key4 box">
 						<a data-toggle="tab" href="#tab_4">
 							<div class="key">
 							</div>
-							<p>Peace &amp; Security</p>
+							<p>Financial Independence</p>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div> 
 	</div>
-	<div class="tab-content">
+	<div class="tab-content" id="sync2">
 		<div class="tab-pane fade in active" id="tab_1">
 			<div class="container">
 				<div class="row">
@@ -122,7 +120,7 @@ $mob_img = get_field('banner_mobile');
 						<img src="<?=get_template_directory_uri()?>/assets/images/key-2.png">
 					</div>
 					<div class="col-xs-10">
-						<h1>Peace &amp; Security</h1>
+						<h1>Proper Health Care</h1>
 						<p>To feel “safe” is the most basic of human desires, none more so than for any girls &amp;  women</p>
 					</div>
 					<div class="clearfix"></div>
@@ -136,7 +134,7 @@ $mob_img = get_field('banner_mobile');
 						<img src="<?=get_template_directory_uri()?>/assets/images/key-3.png">
 					</div>
 					<div class="col-xs-10">
-						<h1>Peace &amp; Security</h1>
+						<h1>Quality Education</h1>
 						<p>To feel “safe” is the most basic of human desires, none more so than for any girls &amp;  women</p>
 					</div>
 					<div class="clearfix"></div>
@@ -150,7 +148,7 @@ $mob_img = get_field('banner_mobile');
 						<img src="<?=get_template_directory_uri()?>/assets/images/key-4.png">
 					</div>
 					<div class="col-xs-10">
-						<h1>Peace &amp; Security</h1>
+						<h1>Financial Independence</h1>
 						<p>To feel “safe” is the most basic of human desires, none more so than for any girls &amp;  women</p>
 					</div>
 					<div class="clearfix"></div>
@@ -168,7 +166,7 @@ $mob_img = get_field('banner_mobile');
 			<div class="program">
 				<div class="col-md-6">
 					<h1>Lifeskills at Schools</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> 
 				</div>
 				<div class="col-md-6">
 					<img src="<?=get_template_directory_uri()?>/assets/images/programmes.jpg">
@@ -181,14 +179,14 @@ $mob_img = get_field('banner_mobile');
 				</div>
 				<div class="col-md-6">
 					<h1>Lifeskills at Schools</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> 
 				</div>
 				<div class="clearfix"></div>
 			</div>
 			<div class="program">
 				<div class="col-md-6">
 					<h1>Lifeskills at Schools</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> 
 				</div>
 				<div class="col-md-6">
 					<img src="<?=get_template_directory_uri()?>/assets/images/programmes.jpg">

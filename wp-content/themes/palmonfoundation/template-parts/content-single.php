@@ -15,9 +15,11 @@
 
 <div class="news-item news-item2">
 	<?php
-		$category = get_the_category();
-		$top_parent_cat = get_top_parent_cat( $category[0]->cat_ID );
-		$categories = get_category( $top_parent_cat );
+		if('programs' != get_post_type()) :
+			$category = get_the_category();
+			$top_parent_cat = get_top_parent_cat( $category[0]->cat_ID );
+			$categories = get_category( $top_parent_cat );
+		endif;
 		$thumb = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
 	?>
 
@@ -31,7 +33,9 @@
 		<?php endif; ?>
 	</div>
 
-	<div class="news-cat"><?php if($top_parent_cat){ echo $categories->name; } else { echo $category[0]->name;} ?></div>
+	<?php if('programs' != get_post_type()) : ?>
+		<div class="news-cat"><?php if($top_parent_cat){ echo $categories->name; } else { echo $category[0]->name;} ?></div>
+	<?php endif; ?>
 
 	<div class="news-content">
 		<?php echo wpautop(get_the_content()); ?>

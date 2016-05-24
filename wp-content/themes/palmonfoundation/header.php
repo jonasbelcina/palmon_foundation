@@ -47,8 +47,8 @@
 			    		<div id="navbar" class="navbar-collapse">
 			    		    <ul class="nav navbar-nav">
 			    		    	<li><a href="<?php echo home_url(); ?>" <?php if(is_front_page()) { ?>class="current-page"<?php } ?>>Home</a></li>
-			    		    	<li><a href="<?php echo home_url(); ?>/about-us" <?php if(is_page('123')) { ?>class="current-page"<?php } ?>>About us</a></li>
-			    		    	<li><a href="<?php echo home_url(); ?>/what-we-do" <?php if(is_page('123')) { ?>class="current-page"<?php } ?>>What we do</a></li>
+			    		    	<li><a href="<?php echo home_url(); ?>/about-us" <?php if(is_page('92')) { ?>class="current-page"<?php } ?>>About us</a></li>
+			    		    	<li><a href="<?php echo home_url(); ?>/what-we-do" <?php if(is_page('97')) { ?>class="current-page"<?php } ?>>What we do</a></li>
 			    		    	<li><a href="<?php echo home_url(); ?>/support-us" <?php if(is_page('123')) { ?>class="current-page"<?php } ?>>Support us</a></li>
 			    		    	<li><a href="<?php echo home_url(); ?>/news" <?php if(is_home()) { ?>class="current-page"<?php } ?>>News &amp; Events</a></li>
 			    		    </ul>

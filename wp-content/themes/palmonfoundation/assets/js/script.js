@@ -119,6 +119,81 @@
             autoplay: true,
         });
 
+        var ww = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        if(ww < 768) {
+            $('.col-xs-3.box').addClass('active');
+
+            // keys to transformation slide
+            var $sync1 = $("#sync1"),
+                $sync2 = $("#sync2"),
+                flag = false,
+                duration = 300;
+
+            var moveTo = 0;
+            var center = 0;
+            var movePrev = false,
+                moveNext = false,
+                changed = false;
+
+            $sync1
+                .owlCarousel({
+                    items: 1,
+                    nav: true,
+                    navText: false
+                })
+                .on('changed.owl.carousel', function (e) {
+                    if (!flag) {
+                        flag = true;
+                        if(moveNext) {
+                            $sync2.trigger('next.owl.carousel', [duration]);
+                            console.log('next!');
+                            moveNext = false;
+                        } else if(movePrev) {
+                            $sync2.trigger('prev.owl.carousel', [duration]);
+                            movePrev = false;
+                        } else {
+                            $sync2.trigger('to.owl.carousel', [e.item.index, duration, true]);
+                        }
+                        
+                        flag = false;
+                    }
+                });
+
+            $sync2
+                .owlCarousel({
+                    items: 1,
+                    center: true,
+                    navText: false,
+                    touchDrag  : false,
+                    mouseDrag  : false,
+                })
+                .on('dragged.owl.carousel', function (e) {
+                 // alert($('.owl-stage').find('.center').find('.item').data('index'));
+                    $sync1.trigger('to.owl.carousel', [e.item.index, duration, true]);
+                });
+
+            $('.theme-controls .owl-prev').on('click', function() {
+                // if($('.owl-item.center').find('.item').data('index') == 0) {
+                //     movePrev = true;
+                //     $sync1.trigger('to.owl.carousel', [4, duration, true]);
+
+                // } else {
+                    $sync1.trigger('prev.owl.carousel', [duration]);
+                // }
+            });
+
+            $('.theme-controls .owl-next').on('click', function() {
+                // if($('.owl-item.center').find('.item').data('index') == 5) {
+                //     moveNext = true;
+                //     $sync1.trigger('to.owl.carousel', [0, duration, true]);
+                //     $sync1.find('.owl-item.active').find('.box').addClass('active');
+                    
+                // } else {
+                    $sync1.trigger('next.owl.carousel', [duration]);
+                // }
+            });
+        }
+
         // home page programs preview on hover
         $('.program-slide').mouseenter(function() {
             var this_data = $(this).find('.preview-images').data('program');
