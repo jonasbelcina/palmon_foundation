@@ -385,6 +385,7 @@ header {
         .mobile-invest img {
             margin: 0 auto;
             max-width: 400px;
+            width: 100%;
         }
 
         .ripple-mobile .effect {
@@ -3234,6 +3235,12 @@ footer {
         text-align: center;
     }
 
+}
+
+@media (max-width: 360px) {
+    .navbar-brand > img {
+        max-width: 230px;
+    }
 }
 
 
