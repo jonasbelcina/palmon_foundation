@@ -40,7 +40,7 @@ $mob_img = get_field('banner_mobile');
 <section class="founders">
 	<div class="container">
 		<div class="row">
-			<h2 class="section-header">Founders Speak</h2>
+			<h2 class="section-header"><?php the_field('founders_heading'); ?></h2>
 
 			<?php
 				if( have_rows('founders') ):
@@ -70,45 +70,24 @@ $mob_img = get_field('banner_mobile');
 
 <section class="the-need">
 	<div class="container">
-		<h2 class="section-header">The Need</h2>
+		<h2 class="section-header"><?php the_field('the_need_heading'); ?></h2>
 		<div class="row">
 			<div class="details">
-				<h2>We believe that everybody has exceptional skills, they only need an environment where they can blossom</h2>
-				<p>Educating girls and empowering women mobilizes communities to take a stand against gender disparity and to assure access to quality education and lifestyle</p>
-				<h3>Educated Girls &amp; Women WILL...</h3>
+				<h2><?php the_field('the_need_subheading_1'); ?></h2>
+				<p><?php the_field('the_need_subheading_2'); ?></p>
+				<h3><?php the_field('the_need_subheading_3'); ?></h3>
 			</div>
 			<div class="needs">
-				<div class="col-md-6">
-					<div class="col-md-8 need"> 
-						Earn 10% More Income
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="col-md-8 need"> 
-						Earn 10% More Income
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="col-md-8 need"> 
-						Earn 10% More Income
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="col-md-8 need"> 
-						Earn 10% More Income
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="col-md-8 need"> 
-						Earn 10% More Income
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="col-md-8 need"> 
-						Earn 10% More Income
-					</div>
-				</div>
-				<div class="clearfix"></div>
+				<?php if( have_rows('educated_benefits') ): ?>
+					<?php while ( have_rows('educated_benefits') ) : the_row(); ?>
+						<div class="col-md-6">
+							<div class="col-md-8 need"> 
+								<?php the_sub_field('content'); ?>
+							</div>
+						</div>
+					<?php endwhile; ?>
+					<div class="clearfix"></div>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>
@@ -116,7 +95,7 @@ $mob_img = get_field('banner_mobile');
 
 <section class="advisory-board">
 	<div class="container">
-		<h2 class="section-header">Advisory Board</h2>
+		<h2 class="section-header"><?php the_field('advisory_board_heading'); ?></h2>
 		<div class="row">
 			<div class="advisory-board-slider">
 				<?php
@@ -124,11 +103,11 @@ $mob_img = get_field('banner_mobile');
 					while ( have_rows('advisory_board') ) : the_row();
 				?>
 					<div class="person-tile" >
-						<div class="col-sm-6 image">
+						<div class="col-md-6 image">
 							<?php $image = get_sub_field('image'); ?>
 							<img src="<?php echo $image; ?>" alt="" />
 						</div>
-						<div class="col-sm-6 content">
+						<div class="col-md-6 content">
 							<div class="inner">
 								<h2><?php the_sub_field('name'); ?></h2>
 								<p class="title"><?php the_sub_field('designation'); ?></p>
@@ -148,7 +127,7 @@ $mob_img = get_field('banner_mobile');
 
 <section class="our-partners">
 	<div class="container">
-		<h2 class="section-header">Our Partners</h2>
+		<h2 class="section-header"><?php the_field('about_partners_heading'); ?></h2>
 		<div class="row">
 			<?php $images = get_field('partners');
 			if( $images ): ?>
@@ -164,32 +143,23 @@ $mob_img = get_field('banner_mobile');
 
 <section class="impact">
 	<div class="container">
-		<h2 class="section-header">Impact</h2>
-		<div class="row">
-			<div class="col-md-4 single">
-				<div class="image">
-					<img src="<?=get_template_directory_uri()?>/assets/images/book.png">
-				</div>
-				<h2>Earn 10% More Income</h2>
-				<p>We educate girls and empower women by leveraging the latest tools and technology and our collaborative learning community.</p>
-			</div> 
-			<div class="col-md-4 single">
-				<div class="image">
-					<img src="<?=get_template_directory_uri()?>/assets/images/prize.png">
-				</div>
-				<h2>Championing Change</h2>
-				<p>We equip our members with cutting-edge knowledge, resources and opportunities to become agents of change in their communities.</p>
-			</div> 
-			<div class="col-md-4 single">
-				<div class="image">
-					<img src="<?=get_template_directory_uri()?>/assets/images/globe.png">
-				</div>
-				<h2>Massive Presence</h2>
-				<p>Palmon Foundation is leaping for women's economic empowerment  with like minded members, organizations and companies.</p>
-			</div>
-			<div class="clearfix"></div>
-			<a href="#" class="join">Join US Now</a>
+		<h2 class="section-header"><?php the_field('impact_heading'); ?></h2>
+		<div class="impact-slider">
+			<?php 
+			if( have_rows('impact') ):
+				while ( have_rows('impact') ) : the_row(); ?>
+				<div class="col-sm-4 single">
+					<?php $impact_img = get_sub_field('image'); ?>
+					<div class="image">
+						<img src="<?php echo $impact_img['url']; ?>" alt="<?php echo $impact_img['alt']; ?>" />
+					</div>
+					<h2><?php the_sub_field('heading'); ?></h2>
+					<?php echo wpautop(get_sub_field('content')); ?>
+				</div> 
+			<?php endwhile;
+			endif; ?>
 		</div>
+		<a href="<?php the_field('impact_button_link'); ?>" class="join"><?php the_field('impact_button_text'); ?></a>
 	</div>
 </section>
 

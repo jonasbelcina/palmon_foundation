@@ -110,7 +110,7 @@
             }
         });
 
-        // home page partners slider
+        // advisory board slider
         $('.advisory-board-slider').owlCarousel({
             items: 1,
             nav: true,
@@ -191,6 +191,14 @@
                 // } else {
                     $sync1.trigger('next.owl.carousel', [duration]);
                 // }
+            });
+
+            // impact slider
+            $('.impact-slider').owlCarousel({
+                items: 1,
+                nav: true,
+                navText: false,
+                // autoplay: true,
             });
         }
 

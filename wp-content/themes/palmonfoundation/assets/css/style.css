@@ -1869,11 +1869,13 @@ footer {
                 font-family: 'GraphieRegular';
                 font-size: 26px;
                 color: #fff;
-                margin: 10px 0;
+                margin: 10px 0 5px;
             }
             .founder-tile p{
                 color: #fff;
                 margin: 0;
+                font-family: 'GraphieRegular';
+                font-size: 16px;
             }
             .founder-tile  .details{
                 border-top:1px solid #4e4e4e;
@@ -1991,6 +1993,35 @@ footer {
     margin: 0 auto;
     position: relative;
 }
+
+    .advisory-board-slider .owl-controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+
+    .advisory-board-slider .owl-controls div {
+        position: relative;
+    }
+
+    .advisory-board-slider .owl-prev:before {
+        content: url('../images/advisory-prev.png');
+        position: absolute;
+        left: -72px;
+        top: -36px;
+    }
+
+    .advisory-board-slider .owl-next {
+        float: right;
+    }
+
+    .advisory-board-slider .owl-next:before {
+        content: url('../images/advisory-next.png');
+        position: absolute;
+        right: -72px;
+        top: -36px;
+    }
+
 .advisory-board .person-tile{
     background: #000;
     color: #fff;
@@ -2018,7 +2049,7 @@ footer {
     padding: 30px 0;
     background: #f5f5f5;
     text-align: center;
-    padding-bottom: 120px;
+    border-top: 1px solid #d7d7d7;
 }
 
 .impact .image{
@@ -2383,6 +2414,18 @@ footer {
         padding-bottom: 50px;
     }
 
+    .advisory-board .person-tile .content {
+        padding: 10px 0;
+    }
+
+    .advisory-board .person-tile h2 {
+        margin: 0;
+    }
+
+    .advisory-board .person-tile p {
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -2666,6 +2709,24 @@ footer {
         display: none;
     }
 
+    .advisory-board-slider .person-tile .image {
+        padding: 0;
+    }
+
+    .advisory-board-slider .person-tile .inner {
+        padding: 10px;
+    }
+
+    .advisory-board-slider .owl-prev:before {
+        -webkit-transform: scale(0.5);
+        left: -40px;
+    }
+
+    .advisory-board-slider .owl-next:before {
+        -webkit-transform: scale(0.5);
+        right: -40px;
+    }
+
     .working-model {
         padding: 40px 0;
     }
@@ -2902,10 +2963,61 @@ footer {
     .about-banner .mission , .about-banner .who{
         padding: 30px 15px;
     }
+
+    .founder-content {
+        bottom: 0;
+        right: 15px;
+    }
+
+    .founder-tile:nth-of-type(2) .founder-content {
+        left: 15px;
+    }
     
     .advisory-board .person-tile .image{
         padding: 0;
     }
+
+    .impact .image {
+        height: 125px;
+    }
+
+    .impact-slider .owl-item img {
+        max-width: 100%;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .impact .single {
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+        .impact-slider .owl-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .impact-slider .owl-prev {
+            width: 16px;
+            height: 16px;
+            display: block;
+            background: url('../images/arrow-left.png') center no-repeat;
+            display: inline-block;
+            float: left;
+            margin-left: -25px;
+        }
+
+        .impact-slider .owl-next {
+            width: 16px;
+            height: 16px;
+            display: block;
+            background: url('../images/arrow-right.png') center no-repeat;
+            display: inline-block;
+            float: right;
+            margin-right: -25px;
+        }
 
     .keys .tab-content img {
         width: auto;
