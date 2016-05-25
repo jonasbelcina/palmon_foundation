@@ -2308,7 +2308,7 @@ footer {
 
 /*Donate now */
 .donate{
-    background: #333 url('../images/school.jpg') no-repeat center center;
+    /*background: #333 url('../images/school.jpg') no-repeat center center;*/
     background-size: auto 100%;
     padding: 60px 0;
     color: #fff;

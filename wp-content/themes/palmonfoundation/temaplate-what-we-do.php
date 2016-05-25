@@ -147,11 +147,12 @@ $mob_img = get_field('banner_mobile');
 	</div>
 </section>
 
-<section class="donate">
+<?php $donate_bg = get_field('donate_background_image'); ?>
+<section class="donate" style="background: url(<?php echo $donate_bg['url']; ?>) center no-repeat #333;">
 	<div class="container">
-		<h1>Together we can send a million more girls to school and create the ripple effect worldwide</h1>
+		<h1><?php the_field('donate_content'); ?></h1>
 		<div class="row">
-			<a href="#">Donate Now</a>
+			<a href="<?php the_field('donate_button_link'); ?>"><?php the_field('donate_button_text'); ?></a>
 		</div>
 	</div>
 </section>
