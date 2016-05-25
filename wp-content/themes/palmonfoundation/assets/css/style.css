@@ -164,8 +164,10 @@ header {
             font-size: 17px;
         }
 
-        .navbar-default .navbar-nav > li > a:hover,
-        .navbar-default .navbar-nav > li > a.current-page {
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:focus,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > li > a:hover {
             border-bottom: 4px solid #e5e5e5;
             background: #171717;
             color: #fff;
@@ -1849,7 +1851,7 @@ footer {
             overflow: hidden;
             position: absolute;
             left: 15px;
-            right: 30px;
+            right: 15px;
             bottom: 30px;
             background: rgba(0,0,0,0.6);
             padding: 0px;
@@ -1860,10 +1862,10 @@ footer {
         }
 
 
-                .founder-tile:nth-of-type(2) .founder-content {
-                    left: 30px;
-                    right: 15px;
-                }
+            .founder-tile:nth-of-type(2) .founder-content {
+                left: 30px;
+                right: 15px;
+            }
 
             .founder-tile  h2 {
                 font-family: 'GraphieRegular';
@@ -2477,8 +2479,10 @@ footer {
                     border: 0;
                 }
 
-                .navbar-default .navbar-nav > li > a.current-page {
+                .navbar-default .navbar-nav > .active > a,
+                .navbar-default .navbar-nav > .active > a:hover {
                     border: 0;
+                    color: #777;
                 }
 
     .banner {

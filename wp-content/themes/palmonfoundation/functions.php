@@ -580,6 +580,13 @@ function disqus_embed($disqus_shortname) {
     </script>';
 }
 
+// Register Bootstrap Navigation Walker
+include get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'palmonfoundation' ),
+) );
+
 
 
 
