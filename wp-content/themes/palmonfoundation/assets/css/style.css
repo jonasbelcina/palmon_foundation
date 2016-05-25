@@ -1851,8 +1851,8 @@ footer {
             max-height: 0px;
             overflow: hidden;
             position: absolute;
-            left: 15px;
-            right: 15px;
+            left: 30px;
+            right: 30px;
             bottom: 30px;
             background: rgba(0,0,0,0.6);
             padding: 0px;
@@ -1865,7 +1865,7 @@ footer {
 
             .founder-tile:nth-of-type(2) .founder-content {
                 left: 30px;
-                right: 15px;
+                right: 30px;
             }
 
             .founder-tile  h2 {
@@ -2972,10 +2972,12 @@ footer {
     .founder-content {
         bottom: 0;
         right: 15px;
+        left: 15px;
     }
 
     .founder-tile:nth-of-type(2) .founder-content {
         left: 15px;
+        right: 15px;
     }
     
     .advisory-board .person-tile .image{
