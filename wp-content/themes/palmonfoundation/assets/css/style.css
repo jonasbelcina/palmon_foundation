@@ -1088,7 +1088,7 @@ footer {
         }
 
             .footer-nav li a {
-                font-family: 'Graphie';
+                font-family: 'GraphieRegular';
                 font-size: 18px;
                 color: #8f9092;
                 margin: 0 30px;
@@ -1169,14 +1169,14 @@ footer {
         }
 
         .footer-mid li {
-            font-family: 'Graphie';
+            font-family: 'GraphieRegular';
             font-size: 16px;
             color: #686868;
             margin-bottom: 7px;
         }
 
         .footer-mid li a {
-            font-family: 'Graphie';
+            font-family: 'GraphieRegular';
             font-size: 16px;
             color: #686868;
         }
